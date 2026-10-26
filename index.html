@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfólio | Desenvolvedor em formação</title>
+<link rel="stylesheet" href="style.css"><script src="script.js" defer></script>
+</head>
+<body>
+<header class="cabecalho"><nav class="container navegacao">
+<a class="logo" href="#inicio">&lt;dev<span>.</span>&gt;</a>
+<button id="botao-menu" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+<div id="links-menu" class="links-menu"><a href="#sobre">Sobre</a><a href="#habilidades">Habilidades</a><a href="#projetos">Projetos</a><a href="#contato">Contato</a><button id="botao-tema" class="botao-tema" aria-label="Alternar tema">☀️</button></div>
+</nav></header>
+<main>
+<section id="inicio" class="hero container"><div><p class="sobretitulo">OLÁ, SEJA BEM-VINDO!</p><h1>Eu sou <span class="destaque">Orfeu</span>.<br>Desenvolvedor em formação.</h1><p>Estudante de Desenvolvimento de Software Multiplataforma na FATEC. Gosto de transformar ideias em projetos funcionais.</p><div class="acoes"><a class="botao primario" href="#projetos">Conhecer projetos ↗</a><a class="botao secundario" href="#contato">Contato</a></div></div>
+<div class="janela-codigo"><div class="pontos">● ● ●</div><pre>const dev = {
+  foco: "Aprender",
+  tecnologias: [
+    "HTML", "CSS",
+    "JavaScript", "Python"
+  ]
+};
+
+console.log("Olá, mundo!");</pre></div>
+</section>
+<section id="sobre" class="secao alternada"><div class="container"><p class="sobretitulo">QUEM SOU EU</p><h2>Sobre mim</h2><p>Sou estudante de Desenvolvimento de Software Multiplataforma na FATEC. Estou desenvolvendo meus conhecimentos em programação, interfaces web e desenvolvimento de sistemas.</p></div></section>
+<section id="habilidades" class="secao"><div class="container"><p class="sobretitulo">TECNOLOGIAS</p><h2>Minhas habilidades</h2><div class="grade habilidades">
+<article class="bloco"><span>🌐</span><h3>HTML</h3><p>Estruturação de páginas web.</p></article>
+<article class="bloco"><span>🎨</span><h3>CSS</h3><p>Layouts, estilos e responsividade.</p></article>
+<article class="bloco"><span>⚡</span><h3>JavaScript</h3><p>Interatividade e funcionalidades.</p></article>
+<article class="bloco"><span>🐍</span><h3>Python</h3><p>Algoritmos, lógica e automação.</p></article>
+</div></div></section>
+<section id="projetos" class="secao alternada"><div class="container"><p class="sobretitulo">MEU TRABALHO</p><h2>Projetos em destaque</h2><p>Alguns projetos e estudos que fazem parte da minha evolução.</p><div class="filtros"><button class="filtro ativo" data-filtro="todos" aria-pressed="true">Todos</button><button class="filtro" data-filtro="web" aria-pressed="false">Web</button><button class="filtro" data-filtro="design" aria-pressed="false">Design</button></div>
+<div class="grade projetos">
+<article class="card-projeto" data-categoria="web"><div class="imagem-projeto imagem-mesa"><img src="imagens/mesa.png" alt="Capa do projeto Mesa RPG" loading="lazy" onerror="this.hidden=true"></div><div class="conteudo-projeto"><h3>Mesa RPG</h3><p>Plataforma para criação de personagens e desenvolvimento de histórias de RPG.</p><div class="etiquetas"><span>Web</span><span>RPG</span><span>Projeto pessoal</span></div><a href="https://github.com/Orfeu-Lira/Gerador-de-hist-rias-de-RPG" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></article>
+<article class="card-projeto" data-categoria="design"><div class="imagem-projeto imagem-organize">✓<small>ORGANIZEICHON</small></div><div class="conteudo-projeto"><h3>Organizeichon</h3><p>Protótipo de aplicativo voltado à organização e à produtividade pessoal.</p><div class="etiquetas"><span>UI/UX</span><span>Design</span><span>Protótipo</span></div></div></article>
+<article class="card-projeto" data-categoria="web"><div class="imagem-projeto imagem-portfolio">&lt;/&gt;<small>PORTFÓLIO</small></div><div class="conteudo-projeto"><h3>Meu portfólio</h3><p>Site responsivo com filtros e temas, desenvolvido com HTML, CSS e JavaScript puro.</p><div class="etiquetas"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://github.com/Orfeu-Lira/Portf-lio-pessoal" target="_blank" rel="noopener noreferrer">Ver código ↗</a></div></article>
+</div></div></section>
+<section id="contato" class="secao contato"><div class="container"><p class="sobretitulo">VAMOS CONVERSAR?</p><h2>Entre em contato</h2><p>Quer conhecer meus projetos? Visite meu GitHub.</p><a class="botao primario" href="https://github.com/Orfeu-Lira" target="_blank" rel="noopener noreferrer">Meu GitHub ↗</a></div></section>
+</main><footer><div class="container">© <span id="ano-atual"></span> Orfeu. Feito com HTML, CSS e JavaScript.</div></footer>
+</body></html>
